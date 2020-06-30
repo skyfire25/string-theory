@@ -1,6 +1,39 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const indexedChars = function(str){
+  let result = ''
+
+for (let i = 0; i < str.length; i++){
+result = result + i + str[i]  
+}
+
+return result;
+}
+
+console.log(indexedChars('ay'))
+
+
+const exclaim = function(str){
+let structure = ''
+for(let i = 0; i < str.length; i++){
+  if(str[i] === '?'){
+  structure += '!'
+  }else if (str[i] === '.'){
+    structure += '!'
+  }
+  else structure += str[i]
+  }
+  return structure
+}
+
+  const repeatIt = function(str1, str2){
+let repeating = ''
+  }
+
+
+
+
 
 
 
