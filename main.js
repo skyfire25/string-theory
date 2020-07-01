@@ -27,17 +27,48 @@ for(let i = 0; i < str.length; i++){
   return structure
 }
 
-  const repeatIt = function(str1, str2){
+  const repeatIt = function(str1,str2){
+   // str1.repeat('str2')
 let repeating = ''
+for(let i = 0; i <str1.length; i++){
+  if(str1[i] === str2[i]){
+    repeating += str2
+  
+
+  }
+  return repeating
+}
   }
 
 
+function truncate(str){
+if(str.length < 18){
+  return str;
+}
+
+let result = '';
+for (let i = 0; i < 15; i++){
+  result = result + str[i];
+}
+
+return result + '...';
+}
+
+function ciEmailify(name){
+  let email = '';
+  for (let i = 0; i < name.length; i++){
+    if (name[i] === ''){
+      email = email + '.';
+    }
+  }
+
+
+  
+}
 
 
 
-
-
-
+  
 
 
 
